@@ -1,0 +1,58 @@
+
+<div class="container">
+
+  <!-- 🔐 TELA DE SENHA -->
+  <div id="lock">
+    <h1> Nosso Amor 💙</h1>
+    <p>Uma data que mudou tudo…</p>
+
+    <div id="display" class="password">______</div>
+
+    <div class="keypad">
+      <button onclick="add('1')">1</button>
+      <button onclick="add('2')">2</button>
+      <button onclick="add('3')">3</button>
+      <button onclick="add('4')">4</button>
+      <button onclick="add('5')">5</button>
+      <button onclick="add('6')">6</button>
+      <button onclick="add('7')">7</button>
+      <button onclick="add('8')">8</button>
+      <button onclick="add('9')">9</button>
+      <button onclick="del()">⌫</button>
+      <button onclick="add('0')">0</button>
+      <button onclick="check()">✔</button>
+    </div>
+  </div>
+
+  <!-- 💖 CONTEÚDO -->
+  <div id="content" class="hidden">
+    <h2>Maria Laura 💙</h2>
+
+    <div class="time">
+      <strong> Estamos juntos há:</strong>
+      <p id="timeTogether"></p>
+    </div>
+
+    <div class="cards">
+      <div class="card" onclick="openModal('motivos')">
+        💙 100 Motivos Para Te Amar
+      </div>
+      <div class="card" onclick="openModal('amor')">
+        🌸 Uma cartinha pra você
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🪟 MODAL -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">❌</span>
+    <div id="modalText"></div>
+  </div>
+</div>
+
+<!-- 🎵 MÚSICAS -->
+<audio id="musicMotivos" src="music/rosyln.mp3"></audio>
+<audio id="musicCartinha" src="music/thefirsttime.mp3"></audio>
+
